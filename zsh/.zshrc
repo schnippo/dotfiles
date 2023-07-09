@@ -62,7 +62,11 @@ bindkey -M main -r "^["
 #        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
 #    fi
 #}
-bindkey -s '^o' '^ulfcd\n'
+# bindkey -s '^o' '^ulfcd\n'
+bindkey -s '^x' '^usx -o * > choice\n'
+bindkey -s '^d' '^ucpfrom choice '
+
+
 bindkey '^u' backward-kill-line
 bindkey '^k' kill-line
 bindkey '^a' beginning-of-line
