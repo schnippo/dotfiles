@@ -6,6 +6,7 @@
 # to clean up.
 
 # Adds `~/.local/bin` to $PATH
+export PATH="$PATH:/home/jons/.local/share/cargo/bin:/opt/oolite"
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 
 unsetopt PROMPT_SP
@@ -15,6 +16,8 @@ export EDITOR="nvim"
 export TERMINAL="st"
 export TERMINAL_PROG="st"
 export BROWSER="librewolf"
+# export BROWSER="chromium" #when changing default browser, comment out both BROWSER-vars, relogin, then run `xdg-settings set default-web-browser chromium.desktop`
+
 
 # Change the default crypto/weather monitor sites.
 # export CRYPTOURL="rate.sx"
@@ -52,6 +55,7 @@ export SQLITE_HISTORY="$XDG_DATA_HOME/sqlite_history"
 export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore ~/docker -l -g ""'
 export LESS=-R
 export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"
 export LESS_TERMCAP_md="$(printf '%b' '[1;36m')"
@@ -66,11 +70,19 @@ export MOZ_USE_XINPUT2="1" # Mozilla smooth scrolling/touchpads.
 export AWT_TOOLKIT="MToolkit wmname LG3D" # May have to install wmname
 export _JAVA_AWT_WM_NONREPARENTING=1 # Fix for Java applications in dwm
 export TODOTXT_DEFAULT_ACTION=ls
+export PASSWORD_STORE_X_SELECTION="PRIMARY"
+export CM_LAUNCHER="dmenu"
+export CM_DIR="/tmp/clipmenu"
+export SNIPDIR="/home/jons/.local/share/snippets"
 
 [ ! -f ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ] && setsid shortcuts >/dev/null 2>&1
+
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:/home/jons/.local/share/gem/ruby/3.0.0/bin"
 
 # Start graphical server on user's current tty if not already running.
 [ "$(tty)" = "/dev/tty1" ] && ! pidof -s Xorg >/dev/null 2>&1 && exec startx "$XINITRC"
 
 # Switch escape and caps if tty and no passwd required:
 sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
+

@@ -1,159 +1,328 @@
 !! Transparency (0-1):
-*.alpha: 0.8
+st.alpha: 0.9
+
+dmenu.foreground:   #FFFFFF
+dmenu.background:   #000000
+dmenu.selbackground: #FFFFFF
+dmenu.selforeground: #000000
+dmenu.font:         "Source Code Pro,Source Code Pro Medium:style=Medium,Regular:pixelsize=18:antialias=true:autohing=true"
+
+
 
 !! Set a default font and font size as below:
-*.font: monospace:size=12
-*.bold_font: 0
-/* name		dark	light */
-/* black	0	8 */
-/* red		1	9 */
-/* green	2	10 */
-/* yellow	3	11 */
-/* blue		4	12 */
-/* purple	5	13 */
-/* cyan		6	14 */
-/* white	7	15 */
+st.font:	"Source Code Pro,Source Code Pro Medium:style=Medium,Regular:pixelsize=18:antialias=true:autohing=true"
 
-nsxiv.mark_foreground = #00ccff
-/* nsxiv.window_bacvground = */
+nsxiv.mark.foreground: #00ccff
+nsxiv.window.background:#00ccff 
 
-/* !! gruvbox: */
-/* *.color0: #1d2021 */
-/* *.color1: #cc241d */
-/* *.color2: #98971a */
-/* *.color3: #d79921 */
-/* *.color4: #458588 */
-/* *.color5: #b16286 */
-/* *.color6: #689d6a */
-/* *.color7: #a89984 */
-/* *.color8: #928374 */
-/* *.color9: #fb4934 */
-/* *.color10: #b8bb26 */
-/* *.color11: #fabd2f */
-/* *.color12: #83a598 */
-/* *.color13: #d3869b */
-/* *.color14: #8ec07c */
-/* *.color15: #ebdbb2 */
-/* *.color256: #1d2021 */
-/* *.color257: #ebdbb2 */
+dwm.normbgcolor:      #000000
+dwm.normbordercolor:  #444444
+dwm.normfgcolor:      #FFFFFF
+dwm.selbordercolor:   #FFFFFF
+dwm.selfgcolor:       #FFFFFF
+dwm.selbgcolor:       #000000
 
-/* !! gruvbox light: */
-/* *.color0: #fbf1c7 */
-/* *.color1: #cc241d */
-/* *.color2: #98971a */
-/* *.color3: #d79921 */
-/* *.color4: #458588 */
-/* *.color5: #b16286 */
-/* *.color6: #689d6a */
-/* *.color7: #7c6f64 */
-/* *.color8: #928374 */
-/* *.color9: #9d0006 */
-/* *.color10: #79740e */
-/* *.color11: #b57614 */
-/* *.color12: #076678 */
-/* *.color13: #8f3f71 */
-/* *.color14: #427b58 */
-/* *.color15: #3c3836 */
-/* *.background: #fbf1c7 */
-/* *.foreground: #282828 */
-/* st.alpha: 0.9 */
+! See https://terminal.sexy/ for good schemes.
 
-/* !! brogrammer: */
-/* *.foreground:  #d6dbe5 */
-/* *.background:  #131313 */
-/* *.color0:      #1f1f1f */
-/* *.color8:      #d6dbe5 */
-/* *.color1:      #f81118 */
-/* *.color9:      #de352e */
-/* *.color2:      #2dc55e */
-/* *.color10:     #1dd361 */
-/* *.color3:      #ecba0f */
-/* *.color11:     #f3bd09 */
-/* *.color4:      #2a84d2 */
-/* *.color12:     #1081d6 */
-/* *.color5:      #4e5ab7 */
-/* *.color13:     #5350b9 */
-/* *.color6:      #1081d6 */
-/* *.color14:     #0f7ddb */
-/* *.color7:      #d6dbe5 */
-/* *.color15:     #ffffff */
-/* *.colorBD:     #d6dbe5 */
+/* ! GOOGLE SCHEME, very simple, fewer colors. */
+/* ! special */
+/* *.foreground:   #c5c8c6 */
+/* *.background:   #1d1f21 */
+/* *.cursorColor:  #c5c8c6 */
+/* ! black */
+/* *.color0:       #1d1f21 */
+/* *.color8:       #969896 */
+/* ! red */
+/* *.color1:       #cc342b */
+/* *.color9:       #cc342b */
+/* ! green */
+/* *.color2:       #198844 */
+/* *.color10:      #198844 */
+/* ! yellow */
+/* *.color3:       #fba922 */
+/* *.color11:      #fba922 */
+/* ! blue */
+/* *.color4:       #3971ed */
+/* *.color12:      #3971ed */
+/* ! magenta */
+/* *.color5:       #a36ac7 */
+/* *.color13:      #a36ac7 */
+/* ! cyan */
+/* *.color6:       #3971ed */
+/* *.color14:      #3971ed */
+/* ! white */
+/* *.color7:       #c5c8c6 */
+/* *.color15:      #ffffff */
 
-/* ! base16 */
-/* *.color0:       #181818 */
-/* *.color1:       #ab4642 */
-/* *.color2:       #a1b56c */
-/* *.color3:       #f7ca88 */
-/* *.color4:       #7cafc2 */
-/* *.color5:       #ba8baf */
-/* *.color6:       #86c1b9 */
-/* *.color7:       #d8d8d8 */
-/* *.color8:       #585858 */
-/* *.color9:       #ab4642 */
-/* *.color10:      #a1b56c */
-/* *.color11:      #f7ca88 */
-/* *.color12:      #7cafc2 */
-/* *.color13:      #ba8baf */
-/* *.color14:      #86c1b9 */
-/* *.color15:      #f8f8f8 */
+/* !ocean dark */
+/* ! special */
+/* *.foreground:   #c0c5ce */
+/* *.background:   #2b303b */
+/* *.cursorColor:  #c0c5ce */
+/* ! black */
+/* *.color0:       #2b303b */
+/* *.color8:       #65737e */
+/* ! red */
+/* *.color1:       #bf616a */
+/* *.color9:       #bf616a */
+/* ! green */
+/* *.color2:       #a3be8c */
+/* *.color10:      #a3be8c */
+/* ! yellow */
+/* *.color3:       #ebcb8b */
+/* *.color11:      #ebcb8b */
+/* ! blue */
+/* *.color4:       #8fa1b3 */
+/* *.color12:      #8fa1b3 */
+/* ! magenta */
+/* *.color5:       #b48ead */
+/* *.color13:      #b48ead */
+/* ! cyan */
+/* *.color6:       #96b5b4 */
+/* *.color14:      #96b5b4 */
+/* ! white */
+/* *.color7:       #c0c5ce */
+/* *.color15:      #eff1f5 */
 
-/* !! solarized */
-/* *.color0:	#073642 */
-/* *.color1:	#dc322f */
-/* *.color2:	#859900 */
-/* *.color3:	#b58900 */
-/* *.color4:	#268bd2 */
-/* *.color5:	#d33682 */
-/* *.color6:	#2aa198 */
-/* *.color7:	#eee8d5 */
-/* *.color9:	#cb4b16 */
-/* *.color8:	#fdf6e3 */
-/* *.color10:	#586e75 */
-/* *.color11:	#657b83 */
-/* *.color12:	#839496 */
-/* *.color13:	#6c71c4 */
-/* *.color14:	#93a1a1 */
-/* *.color15:	#fdf6e3 */
+/* ! ocean light */
+/* ! special */
+/* *.foreground:   #4f5b66 */
+/* *.background:   #eff1f5 */
+/* *.cursorColor:  #4f5b66 */
+/* ! black */
+/* *.color0:       #2b303b */
+/* *.color8:       #65737e */
+/* ! red */
+/* *.color1:       #bf616a */
+/* *.color9:       #bf616a */
+/* ! green */
+/* *.color2:       #a3be8c */
+/* *.color10:      #a3be8c */
+/* ! yellow */
+/* *.color3:       #ebcb8b */
+/* *.color11:      #ebcb8b */
+/* ! blue */
+/* *.color4:       #8fa1b3 */
+/* *.color12:      #8fa1b3 */
+/* ! magenta */
+/* *.color5:       #b48ead */
+/* *.color13:      #b48ead */
+/* ! cyan */
+/* *.color6:       #96b5b4 */
+/* *.color14:      #96b5b4 */
+/* ! white */
+/* *.color7:       #c0c5ce */
+/* *.color15:      #eff1f5 */
+/* dwm.selbordercolor: #bf616a */
 
-/* !! xterm */
-/* *.color0:   #000000 */
-/* *.color1:   #cd0000 */
-/* *.color2:   #00cd00 */
-/* *.color3:   #cdcd00 */
-/* *.color4:   #0000cd */
-/* *.color5:   #cd00cd */
-/* *.color6:   #00cdcd */
-/* *.color7:   #e5e5e5 */
-/* *.color8:   #4d4d4d */
-/* *.color9:   #ff0000 */
-/* *.color10:  #00ff00 */
-/* *.color11:  #ffff00 */
-/* *.color12:  #0000ff */
-/* *.color13:  #ff00ff */
-/* *.color14:  #00ffff */
-/* *.color15:  #aabac8 */
-/* *.background:   #000000 */
+/* ! yousai theme (warm colors) */
+/* ! special */
+/* *.foreground:   #d2c5bc */
+/* *.background:   #101010 */
+/* *.cursorColor:  #d2c5bc */
+/* ! black */
+/* *.color0:       #202020 */
+/* *.color8:       #606060 */
+/* ! red */
+/* *.color1:       #b91e2e */
+/* *.color9:       #d14548 */
+/* ! green */
+/* *.color2:       #81957c */
+/* *.color10:      #a7b79a */
+/* ! yellow */
+/* *.color3:       #f9bb80 */
+/* *.color11:      #fae3a0 */
+/* ! blue */
+/* *.color4:       #356579 */
+/* *.color12:      #7491a1 */
+/* ! magenta */
+/* *.color5:       #2d2031 */
+/* *.color13:      #87314e */
+/* ! cyan */
+/* *.color6:       #0b3452 */
+/* *.color14:      #0f829d */
+/* ! white */
+/* *.color7:       #909090 */
+/* *.color15:      #fff0f0 */
 
-/* ! Dracula Xresources palette */
-/* *.foreground: #F8F8F2 */
-/* *.background: #282A36 */
-/* *.color0:     #000000 */
-/* *.color8:     #4D4D4D */
-/* *.color1:     #FF5555 */
-/* *.color9:     #FF6E67 */
-/* *.color2:     #50FA7B */
-/* *.color10:    #5AF78E */
-/* *.color3:     #F1FA8C */
-/* *.color11:    #F4F99D */
-/* *.color4:     #BD93F9 */
-/* *.color12:    #CAA9FA */
-/* *.color5:     #FF79C6 */
-/* *.color13:    #FF92D0 */
-/* *.color6:     #8BE9FD */
-/* *.color14:    #9AEDFE */
-/* *.color7:     #BFBFBF */
-/* *.color15:    #E6E6E6 */
+/* ! navy-and-ivory (very blueish.) */
+/* ! special */
+/* *.foreground:   #e8dfd6 */
+/* *.background:   #021b21 */
+/* *.cursorColor:  #e8dfd6 */
+/* ! black */
+/* *.color0:       #032c36 */
+/* *.color8:       #065f73 */
+/* ! red */
+/* *.color1:       #c2454e */
+/* *.color9:       #ef5847 */
+/* ! green */
+/* *.color2:       #7cbf9e */
+/* *.color10:      #a2d9b1 */
+/* ! yellow */
+/* *.color3:       #8a7a63 */
+/* *.color11:      #beb090 */
+/* ! blue */
+/* *.color4:       #2e3340 */
+/* *.color12:      #61778d */
+/* ! magenta */
+/* *.color5:       #ff5879 */
+/* *.color13:      #ff99a1 */
+/* ! cyan */
+/* *.color6:       #44b5b1 */
+/* *.color14:      #9ed9d8 */
+/* ! white */
+/* *.color7:       #f2f1b9 */
+/* *.color15:      #f6f6c9 */
 
-/* *.background: .color0 */
-/* *.color256: 0#1d2021 */
-/* *.color257: 15#ebdbb2 */
+/* !vacuous2 */
+/* ! special */
+/* *.foreground:   #d2c5bc */
+/* *.background:   #101010 */
+/* *.cursorColor:  #d2c5bc */
+/* ! black */
+/* *.color0:       #202020 */
+/* *.color8:       #606060 */
+/* ! red */
+/* *.color1:       #b91e2e */
+/* *.color9:       #d14548 */
+/* ! green */
+/* *.color2:       #81957c */
+/* *.color10:      #a7b79a */
+/* ! yellow */
+/* *.color3:       #f9bb80 */
+/* *.color11:      #fae3a0 */
+/* ! blue */
+/* *.color4:       #356579 */
+/* *.color12:      #7491a1 */
+/* ! magenta */
+/* *.color5:       #2d2031 */
+/* *.color13:      #87314e */
+/* ! cyan */
+/* *.color6:       #0b3452 */
+/* *.color14:      #0f829d */
+/* ! white */
+/* *.color7:       #909090 */
+/* *.color15:      #fff0f0 */
+
+! jimbi
+! special
+*.foreground:   #ffffff
+*.background:   #1e1e1e
+*.cursorColor:  #ffffff
+! black
+*.color0:       #5a7260
+*.color8:       #8da691
+! red
+*.color1:       #8f423c
+*.color9:       #eeaa88
+! green
+*.color2:       #bbbb88
+*.color10:      #ccc68d
+! yellow
+*.color3:       #f9d25b
+*.color11:      #eedd99
+! blue
+*.color4:       #e0ba69
+*.color12:      #c9b957
+! magenta
+*.color5:       #709289
+*.color13:      #ffcbab
+! cyan
+*.color6:       #d13516
+*.color14:      #c25431
+! white
+*.color7:       #efe2e0
+*.color15:      #f9f1ed
+
+/* !mostly bright (light theme) */
+/* ! special */
+/* *.foreground:   #707070 */
+/* *.background:   #f3f3f3 */
+/* *.cursorColor:  #707070 */
+/* ! black */
+/* *.color0:       #d3d3d3 */
+/* *.color8:       #b3b3b3 */
+/* ! red */
+/* *.color1:       #ef6b7b */
+/* *.color9:       #ed5466 */
+/* ! green */
+/* *.color2:       #a1d569 */
+/* *.color10:      #afdb80 */
+/* ! yellow */
+/* *.color3:       #f59335 */
+/* *.color11:      #f59335 */
+/* ! blue */
+/* *.color4:       #4ec2e8 */
+/* *.color12:      #5dc7ea */
+/* ! magenta */
+/* *.color5:       #fec7cd */
+/* *.color13:      #d2a4b4 */
+/* ! cyan */
+/* *.color6:       #95c1c0 */
+/* *.color14:      #75a1a0 */
+/* ! white */
+/* *.color7:       #707070 */
+/* *.color15:      #909090 */
+
+
+/* ! kasugano (blueish, nice) */
+/* ! special */
+/* *.foreground:   #ffffff */
+/* *.background:   #1b1b1b */
+/* *.cursorColor:  #ffffff */
+/* ! black */
+/* *.color0:       #3d3d3d */
+/* *.color8:       #4d4d4d */
+/* ! red */
+/* *.color1:       #6673bf */
+/* *.color9:       #899aff */
+/* ! green */
+/* *.color2:       #3ea290 */
+/* *.color10:      #52ad91 */
+/* ! yellow */
+/* *.color3:       #b0ead9 */
+/* *.color11:      #98c9bb */
+/* ! blue */
+/* *.color4:       #31658c */
+/* *.color12:      #477ab3 */
+/* ! magenta */
+/* *.color5:       #596196 */
+/* *.color13:      #7882bf */
+/* ! cyan */
+/* *.color6:       #8292b2 */
+/* *.color14:      #95a7cc */
+/* ! white */
+/* *.color7:       #c8cacc */
+/* *.color15:      #edeff2 */
+
+/* !mostly bright (light theme) */
+/* ! special */
+/* *.foreground:   #707070 */
+/* *.background:   #f3f3f3 */
+/* *.cursorColor:  #707070 */
+/* ! black */
+/* *.color0:       #d3d3d3 */
+/* *.color8:       #b3b3b3 */
+/* ! red */
+/* *.color1:       #ef6b7b */
+/* *.color9:       #ed5466 */
+/* ! green */
+/* *.color2:       #a1d569 */
+/* *.color10:      #afdb80 */
+/* ! yellow */
+/* *.color3:       #f59335 */
+/* *.color11:      #f59335 */
+/* ! blue */
+/* *.color4:       #4ec2e8 */
+/* *.color12:      #5dc7ea */
+/* ! magenta */
+/* *.color5:       #fec7cd */
+/* *.color13:      #d2a4b4 */
+/* ! cyan */
+/* *.color6:       #95c1c0 */
+/* *.color14:      #75a1a0 */
+/* ! white */
+/* *.color7:       #707070 */
+/* *.color15:      #909090 */
+

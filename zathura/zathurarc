@@ -1,4 +1,8 @@
-set sandbox none
+# set sandbox none
+set database sqlite
+set recolor-reverse-video false
+set recolor-keephue true
+
 set statusbar-h-padding 0
 set statusbar-v-padding 0
 set page-padding 1
@@ -8,8 +12,10 @@ map d scroll half-down
 map D toggle_page_mode
 map r reload
 map R rotate
-map K zoom in
-map J zoom out
+map <C-j> zoom in
+map <C-k> zoom out
 map i recolor
 map p print
 map g goto top
+map E exec "xournalpp_open $FILE"
+

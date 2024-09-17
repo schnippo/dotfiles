@@ -13,27 +13,60 @@ for command in mount umount sv pacman updatedb su shutdown poweroff reboot ; do
 	alias $command="sudo $command"
 done; unset command
 
-se() {
-	choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf)"
-	[ -f "$HOME/.local/bin/$choice" ] && $EDITOR "$HOME/.local/bin/$choice"
-	;}
+# se() {
+# 	choice="$(find ~/.local/bin -mindepth 1 -printf '%P\n' | fzf)"
+# 	[ -f "$HOME/.local/bin/$choice" ] && $EDITOR "$HOME/.local/bin/$choice"
+# 	;}
+
+    # pomorodo function
+pomo() {
+    arg1=$1
+    arg2=$2
+    shift
+    args="$*"
+
+    min_work=${arg1:?Example: pomo 25 5 Take a break}
+    sec_work=$((min_work * 60))
+    min_pause=${arg2:?Example: pomo 25 5 Take a break}
+    sec_pause=$((min_pause * 60))
+    msg="${args:?Example: pomo 25 5 Take a break}"
+
+    while true; do
+        sleep "${sec_work:?}" && echo "${msg:?}" && notify-send -u critical -t 0 "${msg:?}" && sleep "${sec_pause:?}" && notify-send "Back to work!" 
+    done
+}
+
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
+    e2="nvim -u ~/.config/nvim.min/init.lua"\
+    te="nvim ~/nc/todo.txt"\
+    se='sudoedit'\
+    pm="podman"\
+    mdb_inject='pm exec -i mariadb mysql -uadmino -pTest1234.'\
+    mdb_shell='pm exec -it mariadb mysql -uadmino -pTest1234.'\
+    gotour="$GOPATH/bin/tour"\
+    gp="gnuplot"\
+    pod="podman pod"\
+    cal="cal -m"\
+    du="du -h" \
+    df="df -h" \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	rm="rm -vI" \
 	bc="bc -ql" \
 	rsync="rsync -vrPlu" \
 	mkd="mkdir -pv" \
+    yta="yt -x -f bestaudio/best --embed-metadata --write-thumbnail --audio-format opus --parse-metadata 'title:%(artist)s - %(title)s' --replace-in-metadata 'title' '[\(\[](Official)* (Audio|Video)[\]\)]' '' --restrict-filename  -o '%(title)s-%(artist)s.%(ext)s'" \
 	yt="yt-dlp --embed-metadata -i" \
-	yta="yt -x -f bestaudio/best" \
-	ytt="yt --skip-download --write-thumbnail" \
+	ytt="yt --skip-download --write-thumbnail"\
 	ffmpeg="ffmpeg -hide_banner"
+    # yt-dlp -f "bestaudio/best" -ciw --extract-audio --audio-format opus 
 
 # Colorize commands when possible.
+# ls="exa -h --color=auto --group-directories-first" \
 alias \
-	ls="ls -hN --color=auto --group-directories-first" \
+	ls="ls --color=auto" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 	ccat="highlight --out-format=ansi" \
@@ -41,26 +74,55 @@ alias \
 
 # These common commands are just too long! Abbreviate them.
 alias \
+    tm="tmux"\
+    tms='tmux attach -t $(tmux list-sessions | dmenu -l 100| cut -d':' -f1)'\
+    ta="tmux attach -t"\
+    tl="tmux list-sessions"\
+    de="direnv"\
+    hs="hugo server --noHTTPCache"\
+    hsn="hugo server --noHTTPCache --navigateToChanged"\
+    eth1-up="sudo ip link set dev eth1 up"\
+    eth1-down="sudo ip link set dev eth1 down" \
+    eth0-up="sudo ip link set dev eth0 up" \
+    eth0-down="sudo ip link set dev eth0 down"\
+    btoff='bt power off'\
+    bton='bt power on'\
+    btc='bt connect'\
+    wiki='wiki-tui'\
+    wt='wiki-tui'\
+    pp='powerpoint'\
+    snap='snap --fontsize 18'\
+    uzh_vpn='vpnc $HOME/nc/uzh/vpnc.conf'\
     sxiv='nsxiv' \
     sx='nsxiv' \
+    keepassxc='QT_SCALE_FACTOR=1.25 keepassxc'\
+    olive='QT_SCALE_FACTOR=1.25 olive-editor'\
+    qnn='QT_SCALE_FACTOR=1.1 QOwnNotes'\
+    qgis='QT_SCALE_FACTOR=1.23 qgis'\
     bk='bindkey'\
 	dc='docker-compose' \
 	t='todo.sh'\
     bt='bluetoothctl'\
 	psg='ps -ef | grep'\
+    l='ls'\
 	ll='ls -lah'\
-	ka="killall" \
 	g="git" \
 	trem="transmission-remote" \
 	YT="youtube-viewer" \
 	sdn="shutdown -h now" \
 	e="$EDITOR" \
 	v="$EDITOR" \
+    sedit="sudoedit"\
 	p="pacman" \
+    rgf='rg --files | rg'\
+    scim='sc-im' \
+    sc='sc-im' \
+    psy="pacman -Sy"\
+    pss="pacman -Ss"\
 	z="zathura"
 
 alias \
 	lf="lfub" \
-	magit="nvim -c MagitOnly" \
 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" \
 	weath="less -S ${XDG_CACHE_HOME:-$HOME/.cache}/weatherreport" \
+    pse="xournalpp /home/jons/nc/uzh/HS23/CHE170/PSE.pdf" \

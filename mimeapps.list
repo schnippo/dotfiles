@@ -1,4 +1,5 @@
 [Default Applications]
+application/zip=caja.desktop;
 text/x-shellscript=text.desktop;
 x-scheme-handler/magnet=torrent.desktop;
 application/x-bittorrent=torrent.desktop;
@@ -9,14 +10,27 @@ application/pdf=pdf.desktop;
 image/png=img.desktop;
 image/jpeg=img.desktop;
 image/gif=img.desktop;
-application/rss+xml=rss.desktop
-video/x-matroska=video.desktop
-video/mp4=video.desktop
-x-scheme-handler/lbry=lbry.desktop
-inode/directory=file.desktop
-message/rfc822=userapp-Thunderbird-QZYX41.desktop
-x-scheme-handler/mid=userapp-Thunderbird-QZYX41.desktop
+application/rss+xml=rss.desktop;
+video/x-matroska=video.desktopk;
+video/mp4=video.desktop;
+x-scheme-handler/lbry=lbry.desktop;
+inode/directory=file.desktop;
+message/rfc822=userapp-Thunderbird-QZYX41.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-QZYX41.desktop;
+image/webp=sxiv.desktop;
+application/zip=userapp-echo-RW3V91.desktop;
+text/html=librewolf.desktop
+x-scheme-handler/http=librewolf.desktop
+x-scheme-handler/https=librewolf.desktop
+x-scheme-handler/about=librewolf.desktop
+x-scheme-handler/unknown=librewolf.desktop
 
 [Added Associations]
+application/x-freeplane=freeplane.desktop
 x-scheme-handler/mailto=userapp-Thunderbird-QZYX41.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-QZYX41.desktop;
+image/webp=sxiv.desktop;
+application/zip=userapp-st-MS6V91.desktop;userapp-st-MJ5M91.desktop;userapp-st-1ZPJ91.desktop;userapp-st-WMCD91.desktop;userapp-echo-RW3V91.desktop;
+inode/x-empty=text.desktop;
+
+[Removed Associations]

@@ -3,25 +3,33 @@
     follow = keyboard
     width = 370
     height = 350
-    offset = 0x19
-    padding = 2
-    horizontal_padding = 2
-    transparency = 25
-    font = Monospace 12
+    offset = 30x38
+    padding = 20
+    horizontal_padding = 10
+    font = Roboto Mono NerdFont 13
     format = "<b>%s</b>\n%b"
+    transparency = 10
+    dmenu = "/usr/local/bin/dmenu -p dunst"
+    corner_radius = 5
+    corners = all 
 
 [urgency_low]
-    background = "#1d2021"
-    foreground = "#928374"
-    timeout = 3
+    foreground = "#ebdbb2"
+    background  = "#555753"
+    frame_color  = "#555753"
+    timeout = 5
 
 [urgency_normal]
     foreground = "#ebdbb2"
-    background = "#458588"
+    background  = "#204A87"
+    frame_color  = "#204A87"
     timeout = 5
 
 [urgency_critical]
-    background = "#1cc24d"
+    override_pause_level = 101 
+    frame_color = "#EF2929"
+    background = "#EF2929"
     foreground = "#ebdbb2"
-    frame_color = "#fabd2f"
     timeout = 10
+
+

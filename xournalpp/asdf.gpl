@@ -1,0 +1,32 @@
+GIMP Palette
+# Name: Xournal Default Palette
+100 0 0 Black
+# 0 128 0 Green
+62	105	88	Green
+# 0 192 255 Light Blue
+92	139	147	Light Blue
+0 255 0 Light Green
+# 51 51 204 Blue
+36	61	92	Blue
+128 128 128 Gray
+# 255 0 0 Red
+176	58	72	Red
+# 255 0 255 Magenta
+98	76	60	Brown
+# 212	128	77 Orange
+212	128	77	Orange
+# 255 255 0 Yellow
+224	200	114	Yellow
+255 255 255 White
+
+# Name: Japanese Woodblock
+#Description: 12 colours sampled from old Japanese woodblock prints.
+#Colors: 12
+# 43	40	33	Black
+# 98	76	60	Brown
+# 36	61	92	Blue
+# 92	139	147	Lightblue
+# 177	165	141	Gray
+# 176	58	72	Red
+# 212	128	77	Orange
+# 224	200	114	Yellow

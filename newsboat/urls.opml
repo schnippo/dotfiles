@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<opml version="1.0">
+  <head>
+    <title>Newsboat - Exported Feeds</title>
+  </head>
+  <body>
+    <outline type="rss" xmlUrl="https://grimgrains.com/links/rss.xml" htmlUrl="https://grimgrains.com/" title="Grimgrains" text="Grimgrains"/>
+    <outline type="rss" xmlUrl="https://100r.co/links/rss.xml" htmlUrl="https://100r.co/" title="Hundred Rabbits" text="Hundred Rabbits"/>
+    <outline type="rss" xmlUrl="https://teotwurbulence.blogspot.com/feeds/posts/default" htmlUrl="https://teotwurbulence.blogspot.com/" title="TEOTWAWKI: Life in Interesting Times" text="TEOTWAWKI: Life in Interesting Times"/>
+    <outline type="rss" xmlUrl="https://www.jntrnr.com/atom.xml" htmlUrl="https://www.jntrnr.com/atom.xml" title="" text=""/>
+    <outline type="rss" xmlUrl="https://lukesmith.xyz/rss.xml" htmlUrl="https://lukesmith.xyz/" title="Luke Smith's Webpage on Luke's Webpage" text="Luke Smith's Webpage on Luke's Webpage"/>
+    <outline type="rss" xmlUrl="https://based.cooking/index.xml" htmlUrl="https://based.cooking/" title="Based Cooking" text="Based Cooking"/>
+    <outline type="rss" xmlUrl="https://www.spreaker.com/show/4488937/episodes/feed" htmlUrl="http://lostterminal.com/" title="Lost Terminal" text="Lost Terminal"/>
+    <outline type="rss" xmlUrl="https://artixlinux.org/feed.php" htmlUrl="https://artixlinux.org/" title="Artix Linux news" text="Artix Linux news"/>
+    <outline type="rss" xmlUrl="https://www.archlinux.org/feeds/news/" htmlUrl="https://archlinux.org/news/" title="Arch Linux: Recent news updates" text="Arch Linux: Recent news updates"/>
+  </body>
+</opml>

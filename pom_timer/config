@@ -1,0 +1,3 @@
+#!/bin/bash
+pom_schedule_file="/home/jons/.local/share/timer/pomodoro_timer_schedule.txt"
+pom_state_file="/home/jons/.local/share/timer/pomodoro_state.txt"

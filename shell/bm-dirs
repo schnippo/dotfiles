@@ -1,16 +1,34 @@
 # You can add comments to these files with #
-cac ${XDG_CACHE_HOME:-$HOME/.cache}
-cf  ${XDG_CONFIG_HOME:-$HOME/.config/nvim}
 cf  ${XDG_CONFIG_HOME:-$HOME/.config}
-d   ${XDG_DOWNLOAD_DIR:-$HOME/Downloads}
+d   ${XDG_DOWNLOAD_DIR:-$HOME/dl}
 dt  ${XDG_DATA_HOME:-$HOME/.local/share}
 rr  $HOME/.local/src
 h   $HOME
-m   ${XDG_MUSIC_DIR:-$HOME/Music}
+n   $HOME/nc
+mu  $HOME/nc/music
+u   $HOME/nc/uzh/FS24
+bib $HOME/nc/archives/library
+a   $HOME/nc/work/alpine
+a2  $HOME/nc/work/alpine/ae2.0
+a2p  $HOME/nc/work/alpine/ae2.0/assets/pod
+gi  $HOME/git/
+ma  $HOME/nc/uzh/mathe
 mn  /mnt
-mnc /mnt/card
-mnd /mnt/drive
-pp  ${XDG_PICTURES_DIR:-$HOME/Pictures}
-sc  $HOME/.local/bin
+mt  /mnt/tmp
+mdf /mnt/tmp/DCIM/datefiles
+ms  /mnt/supernote
+md  /mnt/drive
+mb  /mnt/backup
+me  /mnt/fat_exch
+mp  /mnt/drive/photography
+lb  $HOME/.local/bin
 src $HOME/.local/src
-vv  ${XDG_VIDEOS_DIR:-$HOME/Videos}
+srv $HOME/.local/service
+lo $HOME/.local
+sn $HOME/.local/share/snippets
+#
+# cac ${XDG_CACHE_HOME:-$HOME/.cache}
+# cf  ${XDG_CONFIG_HOME:-$HOME/.config/nvim}
+# pp  ${XDG_PICTURES_DIR:-$HOME/Pictures}
+# m   ${XDG_MUSIC_DIR:-$HOME/Music}
+# vv  ${XDG_VIDEOS_DIR:-$HOME/Videos}
